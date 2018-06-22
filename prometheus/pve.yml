@@ -1,0 +1,4 @@
+default:
+    user: root@pam
+    password: wnxo29
+    verify_ssl: false

@@ -1,0 +1,15 @@
+global:
+   slack_api_url: 'https://hooks.slack.com/services/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'
+  # slack_api_url: 'https://api.slack.com/apps/A90S3Q753'
+
+route:
+  receiver: 'slack'
+  group_by: [alertname, datacenter, app]
+
+receivers:
+- name: 'slack'
+  slack_configs:
+  - channel: '#random'
+    username: 'webhookbot'
+    api_url: 'https://hooks.slack.com/services/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'
+    send_resolved: true
